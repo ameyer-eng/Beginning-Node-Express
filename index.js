@@ -2,6 +2,7 @@
 const express = require('express')
 const path = require('path') //requires the path thing that keeps us from having to write a bunch of OS code to find files
 const app = express() //calls express function to start new Express app
+app.use(express.static('public'))
 
 
 app.listen(3000, ()=>{
